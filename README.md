@@ -4,7 +4,7 @@
 
 ```mermaid
 classDiagram
-  class Person {
+  class User {
     - name: String
     - account: Account
     - features: List<Feature>
