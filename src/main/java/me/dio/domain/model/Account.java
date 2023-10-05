@@ -8,7 +8,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-@Entity(name = "tb_user")
+@Entity(name = "tb_account")
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,11 +20,11 @@ public class Account {
 
     private String agency;
     
-    //scale limita a quantidade de numero da coluna e precision melhora a precisao do decimal para que tenha apenas duas casas decimais.
-    @Column(scale = 13, precision = 2)
+    //precision limita a quantidade de numero da coluna e scale indica a quantidade de números após a virgurla para que tenha apenas duas casas decimais.
+    @Column(scale = 2, precision = 13)
     private BigDecimal balance;
     
-    @Column(name = "additional_limit", precision = 2)
+    @Column(name = "additional_limit", scale = 2)
     private BigDecimal limit;
 
 

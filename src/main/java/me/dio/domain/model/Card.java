@@ -18,7 +18,7 @@ public class Card {
     @Column(unique = true)
     private String number;
     //o "name" muda o nome da coluna apenas na tabela, nesse caso para evitar erro caso o banco de dados usado tenha a palavra "limit" como palavra reservada.
-    @Column(name = "available_limit", scale = 13, precision = 2)
+    @Column(name = "available_limit", precision = 13, scale = 2)
     private BigDecimal limit;
 
 
