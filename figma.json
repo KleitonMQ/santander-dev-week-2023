@@ -1,0 +1,25 @@
+{
+    "name": "kleiton",
+    "account": {
+      "number": "000000-0",
+      "agency": "00000",
+      "balance": 1234.6,
+      "limit": 1000.00
+    },
+    "features" : [
+      {
+        "icon" : "url",
+        "desciption" : "descrição"
+      }
+    ],
+    "card" : {
+      "nuber" : "xxxx-xxxx-xxxx-xxxx",
+      "limit" : 1000.00
+    },
+    "news" : [
+      {
+        "icon" : "url",
+        "desciption" : "descrição"
+      }
+    ]
+  }
