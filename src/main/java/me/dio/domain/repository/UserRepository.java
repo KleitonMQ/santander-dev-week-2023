@@ -12,4 +12,6 @@ public interface UserRepository extends JpaRepository<User, Long>{
      * métodos de gerenciamento. Ela já vem configurada com
      * vários métodos para agilizar os comandos para banco de dados. (CRUD)
      */
+
+     boolean existsByAccountNumber(String accountNumber);
 }
